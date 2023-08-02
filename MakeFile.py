@@ -246,7 +246,7 @@ FolderList = [
     }
   ]
 
-path= "E://Coding/Delete/"
+TargetPath = "E://Coding/Delete/"
 #Tar = "1/2022-06-21-first.md"
 
 # #
@@ -263,7 +263,7 @@ MaxItem = len(FolderList) - 1
 
 for i in range(0,MaxItem):
     Target = FolderList[i]['path']
-    NameFold = path + Target
+    NameFold = TargetPath + Target
 
     if ('size' in FolderList[i].keys()):
         open(NameFold[0: -len(Target.split('/')[-1])] + NameFold.split('/')[-1], "wb")
