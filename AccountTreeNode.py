@@ -20,7 +20,6 @@
 #              'e': ['a','b','c']}
 
 
-
 def LeafNodeSize(OrderList, Deep):
     Sum = 0
     PutItem = {}
